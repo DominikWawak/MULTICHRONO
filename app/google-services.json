@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "69972413255",
+    "project_id": "multitimer-f903c",
+    "storage_bucket": "multitimer-f903c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69972413255:android:fb769dc0a6c0052d249a62",
+        "android_client_info": {
+          "package_name": "com.multitimer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69972413255-c9ia0u0q7cv4j99oa7crkme8eldd7obf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcu77_3vptLdctA3VEnWV51uHEkB0oAc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69972413255-c9ia0u0q7cv4j99oa7crkme8eldd7obf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
