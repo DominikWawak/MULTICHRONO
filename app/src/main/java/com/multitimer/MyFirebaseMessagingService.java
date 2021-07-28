@@ -55,7 +55,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             e.printStackTrace();
         }
 
-        notificationBuilder.setContentIntent(pendingIntent);
+        //notificationBuilder.setContentIntent(pendingIntent);
 
 
         NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
@@ -68,7 +68,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
         }
 
-        //notificationManager.notify(id, notificationBuilder.build());
+        notificationManager.notify(id, notificationBuilder.build());
 
 
 

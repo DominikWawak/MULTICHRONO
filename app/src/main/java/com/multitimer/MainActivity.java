@@ -37,15 +37,14 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
 
-    private RequestQueue mRequestQueue;
-    private String URL = "https://fcm.googleapis.com/fcm/send";
-    private String topic = "def";
+    Message message ;
     private  EditText topicSub;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        message = new Message();
         setContentView(R.layout.activity_main);
 
         if(getIntent().hasExtra("startTime")){
@@ -56,20 +55,21 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Button sendButton = findViewById(R.id.sendButton);
-         topicSub = findViewById(R.id.topicSubscription);
-         Button subToTopic = findViewById(R.id.subToTopic);
+        topicSub = findViewById(R.id.topicSubscription);
+        Button subToTopic = findViewById(R.id.subToTopic);
+
+        message.setmRequestQueue(Volley.newRequestQueue(this));
 
 
 
-        mRequestQueue = Volley.newRequestQueue(this);
-        FirebaseMessaging.getInstance().subscribeToTopic(topic);
+
 
 
         subToTopic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                topic = topicSub.getText().toString();
-                FirebaseMessaging.getInstance().subscribeToTopic(topic);
+                message.setTopic(topicSub.getText().toString());
+                FirebaseMessaging.getInstance().subscribeToTopic(message.getTopic());
             }
         });
 
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendNotification();
+                message.sendNotification("timer has started","Please don't Click");
 
 
 
@@ -91,66 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void sendNotification() {
-
-
-        //Json Object sample
-//        {
-//            "to" :  "topics/topic name",
-//            notification:
-//                title :"title",
-//                body: "body"
-//        }
-
-        topic = topicSub.getText().toString();
-
-        JSONObject mainObject = new JSONObject();
-        try{
-            mainObject.put("to","/topics/"+topic);
-            JSONObject notificationObj = new JSONObject();
-            notificationObj.put("title","timer has started");
-            notificationObj.put("body","Please click to control");
-
-            JSONObject extraData = new JSONObject();
-            extraData.put("startTime", Calendar.getInstance().getTime());
-
-
-            mainObject.put("notification",notificationObj);
-            mainObject.put("data",extraData);
-
-            JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, URL,
-                    mainObject,
-                    new Response.Listener<JSONObject>() {
-                        @Override
-                        public void onResponse(JSONObject response) {
-
-                        }
-                    },
-                    new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-
-                        }
-                    }
-            ){
-                @Override
-                public Map<String, String> getHeaders() throws AuthFailureError {
-                    Map<String,String> header = new HashMap<>();
-                    header.put("content-type","application/json");
-                    header.put("authorization","key=******************************PASTEKEYHERE****************************************");
-                    return header;
-
-                }
-            };
-
-            mRequestQueue.add(request);
-
-        } catch (JSONException e ){
-            e.printStackTrace();
-        }
-
-
-    }
 
 
 
