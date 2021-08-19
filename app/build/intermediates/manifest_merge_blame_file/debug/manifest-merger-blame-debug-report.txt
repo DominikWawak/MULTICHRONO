@@ -1,0 +1,245 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.multitimer"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:22:5-79
+12-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:22:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+13-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:23:5-68
+13-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:23:22-65
+14    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+14-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:25:5-82
+14-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:25:22-79
+15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+15-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:26:5-110
+15-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:26:22-107
+16
+17    <application
+17-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:7:5-41:19
+18        android:allowBackup="true"
+18-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:8:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.5.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/c7ef75b126c8b6bfe64df1480ebbdd5a/core-1.5.0/AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:9:9-43
+22        android:label="@string/app_name"
+22-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:10:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:11:9-54
+24        android:supportsRtl="true"
+24-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:12:9-35
+25        android:testOnly="true"
+26        android:theme="@style/Theme.MultiTimer" >
+26-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:13:9-48
+27        <activity android:name="com.multitimer.RecieveNotificationActivity" />
+27-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:14:9-74
+27-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:14:19-62
+28
+29        <service
+29-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:16:9-22:19
+30            android:name="com.multitimer.MyFirebaseMessagingService"
+30-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:17:13-55
+31            android:exported="false" >
+31-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:18:13-37
+32            <intent-filter>
+32-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:19:13-21:29
+33                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+33-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:20:17-78
+33-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:20:25-75
+34            </intent-filter>
+35        </service>
+36
+37        <meta-data
+37-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:24:9-26:67
+38            android:name="com.google.firebase.messaging.default_notification_icon"
+38-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:25:13-83
+39            android:resource="@drawable/ic_launcher_background" />
+39-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:26:13-64
+40        <!--
+41             Set color used with incoming notification messages. This is used when no color is set for the incoming
+42             notification message. See README(https://goo.gl/6BKBk7) for more.
+43        -->
+44        <meta-data
+44-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:29:9-31:67
+45            android:name="com.google.firebase.messaging.default_notification_color"
+45-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:30:13-84
+46            android:resource="@color/cardview_light_background" />
+46-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:31:13-64
+47
+48        <activity android:name="com.multitimer.MainActivity" >
+48-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:34:9-40:20
+48-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:34:19-47
+49            <intent-filter>
+49-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:35:13-39:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:36:17-69
+50-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:36:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:38:17-77
+52-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:38:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <receiver
+56-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:28:9-35:20
+57            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+57-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:29:13-78
+58            android:exported="true"
+58-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:30:13-36
+59            android:permission="com.google.android.c2dm.permission.SEND" >
+59-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:31:13-73
+60            <intent-filter>
+60-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:32:13-34:29
+61                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+61-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:33:17-81
+61-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:33:25-78
+62            </intent-filter>
+63        </receiver>
+64        <!--
+65             FirebaseMessagingService performs security checks at runtime,
+66             but set to not exported to explicitly avoid allowing another app to call it.
+67        -->
+68        <service
+68-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:41:9-48:19
+69            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+69-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:42:13-82
+70            android:directBootAware="true"
+70-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:43:13-43
+71            android:exported="false" >
+71-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:44:13-37
+72            <intent-filter android:priority="-500" >
+72-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:19:13-21:29
+73                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+73-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:20:17-78
+73-->/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/AndroidManifest.xml:20:25-75
+74            </intent-filter>
+75        </service>
+76        <service
+76-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:49:9-55:19
+77            android:name="com.google.firebase.components.ComponentDiscoveryService"
+77-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:50:13-84
+78            android:directBootAware="true"
+78-->[com.google.firebase:firebase-common:20.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+79            android:exported="false" >
+79-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:51:13-37
+80            <meta-data
+80-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:52:13-54:85
+81                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+81-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:53:17-119
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.firebase:firebase-messaging:22.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/7c2b1dcd645b8992ec49466f01613cfa/firebase-messaging-22.0.0/AndroidManifest.xml:54:17-82
+83            <meta-data
+83-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/ae9e7e641757d026e311f1995ed12597/firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+84                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+84-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/ae9e7e641757d026e311f1995ed12597/firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/ae9e7e641757d026e311f1995ed12597/firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+86            <meta-data
+86-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/play-services-measurement-api-19.0.0/AndroidManifest.xml:30:13-32:85
+87                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+87-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/play-services-measurement-api-19.0.0/AndroidManifest.xml:31:17-139
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.android.gms:play-services-measurement-api:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/de2c13ed196484300b446ed312f50cec/play-services-measurement-api-19.0.0/AndroidManifest.xml:32:17-82
+89            <meta-data
+89-->[com.google.firebase:firebase-installations:17.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+90                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+90-->[com.google.firebase:firebase-installations:17.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+91                android:value="com.google.firebase.components.ComponentRegistrar" />
+91-->[com.google.firebase:firebase-installations:17.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a30eae67e308f2990f34fd0ceabcf627/firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+92        </service>
+93        <service
+93-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/e40e321fe503541ce8e272d3ff5285f1/transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+94            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+94-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/e40e321fe503541ce8e272d3ff5285f1/transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+95            android:exported="false" >
+95-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/e40e321fe503541ce8e272d3ff5285f1/transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+96            <meta-data
+96-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/e40e321fe503541ce8e272d3ff5285f1/transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+97                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+97-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/e40e321fe503541ce8e272d3ff5285f1/transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+98                android:value="cct" />
+98-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/e40e321fe503541ce8e272d3ff5285f1/transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+99        </service>
+100
+101        <provider
+101-->[com.google.firebase:firebase-common:20.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+102            android:name="com.google.firebase.provider.FirebaseInitProvider"
+102-->[com.google.firebase:firebase-common:20.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+103            android:authorities="com.multitimer.firebaseinitprovider"
+103-->[com.google.firebase:firebase-common:20.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+104            android:directBootAware="true"
+104-->[com.google.firebase:firebase-common:20.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+105            android:exported="false"
+105-->[com.google.firebase:firebase-common:20.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+106            android:initOrder="100" />
+106-->[com.google.firebase:firebase-common:20.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/ba99f0db75ff1152780be89a71df52d7/firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+107
+108        <receiver
+108-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:29:9-33:20
+109            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+109-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:30:13-85
+110            android:enabled="true"
+110-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:31:13-35
+111            android:exported="false" >
+111-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:32:13-37
+112        </receiver>
+113
+114        <service
+114-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:35:9-38:40
+115            android:name="com.google.android.gms.measurement.AppMeasurementService"
+115-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:36:13-84
+116            android:enabled="true"
+116-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:37:13-35
+117            android:exported="false" />
+117-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:38:13-37
+118        <service
+118-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:39:9-43:72
+119            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+119-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:40:13-87
+120            android:enabled="true"
+120-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:41:13-35
+121            android:exported="false"
+121-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:42:13-37
+122            android:permission="android.permission.BIND_JOB_SERVICE" />
+122-->[com.google.android.gms:play-services-measurement:19.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/a2984f0210723d09e67626552b7d859d/play-services-measurement-19.0.0/AndroidManifest.xml:43:13-69
+123
+124        <meta-data
+124-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/c059897ed48e949969f208f882057f81/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+125            android:name="com.google.android.gms.version"
+125-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/c059897ed48e949969f208f882057f81/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+126            android:value="@integer/google_play_services_version" />
+126-->[com.google.android.gms:play-services-basement:17.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/c059897ed48e949969f208f882057f81/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+127
+128        <service
+128-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/5cdcca82c4c07cfcc748932a974bd9be/transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+129            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+129-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/5cdcca82c4c07cfcc748932a974bd9be/transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+130            android:exported="false"
+130-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/5cdcca82c4c07cfcc748932a974bd9be/transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+131            android:permission="android.permission.BIND_JOB_SERVICE" >
+131-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/5cdcca82c4c07cfcc748932a974bd9be/transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+132        </service>
+133
+134        <receiver
+134-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/5cdcca82c4c07cfcc748932a974bd9be/transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+135            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+135-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/5cdcca82c4c07cfcc748932a974bd9be/transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+136            android:exported="false" />
+136-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/5cdcca82c4c07cfcc748932a974bd9be/transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+137    </application>
+138
+139</manifest>
