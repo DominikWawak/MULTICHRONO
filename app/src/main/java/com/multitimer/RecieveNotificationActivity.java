@@ -1,5 +1,6 @@
 package com.multitimer;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
@@ -7,8 +8,10 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
@@ -17,6 +20,7 @@ import android.widget.TextView;
 import com.android.volley.toolbox.Volley;
 import com.google.firebase.messaging.FirebaseMessagingService;
 
+import java.time.Duration;
 import java.util.Calendar;
 
 public class RecieveNotificationActivity extends AppCompatActivity {
@@ -29,6 +33,8 @@ public class RecieveNotificationActivity extends AppCompatActivity {
 
 
     private TextView lapView;
+
+    private long lastLap = 0;
 
 
 
@@ -85,16 +91,26 @@ public class RecieveNotificationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 message.sendNotification("lap","lap");
+
             }
+
         });
     }
 
     public BroadcastReceiver receiver = new BroadcastReceiver() {
+        @RequiresApi(api = Build.VERSION_CODES.O)
         @Override
         public void onReceive(Context context, Intent intent) {
             if (intent != null) {
                 String str = intent.getStringExtra("key");
-                lapView.setText("LAPPPPPPPP");
+
+                long timeStopped =  SystemClock.elapsedRealtime()- chronometer.getBase() ;
+
+                long t =timeStopped - lastLap;
+
+
+                lapView.setText(lapView.getText() + "\n"+"LAP  │ " + chronometer.getText() + "| " + t / 1000  + " s");
+                lastLap = timeStopped ;
 
             }
         }
