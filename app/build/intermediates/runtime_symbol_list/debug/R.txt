@@ -1790,7 +1790,6 @@ int id chip1 0x7f080062
 int id chip2 0x7f080063
 int id chip3 0x7f080064
 int id chip_group 0x7f080065
-int id chrono 0x7f080066
 int id chronometer 0x7f080067
 int id circle_center 0x7f080068
 int id clear_text 0x7f080069
@@ -2086,6 +2085,7 @@ int id textinput_placeholder 0x7f08018a
 int id textinput_prefix_text 0x7f08018b
 int id textinput_suffix_text 0x7f08018c
 int id time 0x7f08018d
+int id timerText 0x7f0801af
 int id title 0x7f08018e
 int id titleDividerNoCustom 0x7f08018f
 int id title_template 0x7f080190

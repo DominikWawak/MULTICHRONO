@@ -54,22 +54,21 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
+        // start button
         Button sendButton = findViewById(R.id.sendButton);
+        // field for channel
         topicSub = findViewById(R.id.topicSubscription);
+        // sub button
         Button subToTopic = findViewById(R.id.subToTopic);
 
         message.setmRequestQueue(Volley.newRequestQueue(this));
-
-
-
-
-
 
         subToTopic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 message.setTopic(topicSub.getText().toString());
                 FirebaseMessaging.getInstance().subscribeToTopic(message.getTopic());
+                //message.sendNotification("Success","Successfully subscribed to the topic");
             }
         });
 
@@ -81,9 +80,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 message.sendNotification("timer has started","Please don't Click");
-
-
-
 
             }
         });

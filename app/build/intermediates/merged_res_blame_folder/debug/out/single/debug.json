@@ -1,66 +1,66 @@
 [
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/layout_activity_recieve_notification.xml.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/layout/activity_recieve_notification.xml"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/layout/activity_main.xml"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_recieve_notification.xml.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\layout\\activity_recieve_notification.xml"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     }
 ]

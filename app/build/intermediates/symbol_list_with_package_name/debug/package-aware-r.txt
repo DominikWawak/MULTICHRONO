@@ -1791,7 +1791,6 @@ id chip1
 id chip2
 id chip3
 id chip_group
-id chrono
 id chronometer
 id circle_center
 id clear_text
@@ -2087,6 +2086,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id timerText
 id title
 id titleDividerNoCustom
 id title_template

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.hissaan:TimeCounter:1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8dfac2ec6bab6ca89d4899d27a7e6c9e/TimeCounter-1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8dfac2ec6bab6ca89d4899d27a7e6c9e/TimeCounter-1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8dfac2ec6bab6ca89d4899d27a7e6c9e/TimeCounter-1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.hissaan/TimeCounter/1.2/697e4f439b0b722ad3157ddc5e0ec4320e2aa0e7/TimeCounter-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,9 +1,9 @@
-#Wed Aug 18 13:05:13 IST 2021
-base.2=/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
+#Tue Aug 31 16:26:25 BST 2021
+base.2=C\:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
 path.2=4/classes.dex
-base.1=/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.1=C\:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 path.1=0/classes.dex
-base.0=/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.0=C\:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex

@@ -19,11 +19,41 @@ public class Message {
 
     private RequestQueue mRequestQueue;
     private String URL = "https://fcm.googleapis.com/fcm/send";
-    private String topic = "def";
+
+    // change to a random string
+    private String topic = getRandomString();
+
+
+    /*
+     *   https://www.geeksforgeeks.org/generate-random-string-of-given-size-in-java/
+     */
+    private String getRandomString() {
+        // chose a Character random from this String
+        String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                + "0123456789"
+                + "abcdefghijklmnopqrstuvxyz";
+
+        // create StringBuffer size of AlphaNumericString
+        StringBuilder sb = new StringBuilder(16);
+
+        for (int i = 0; i < 16; i++) {
+
+            // generate a random number between
+            // 0 to AlphaNumericString variable length
+            int index
+                    = (int)(AlphaNumericString.length()
+                    * Math.random());
+
+            // add Character one by one in end of sb
+            sb.append(AlphaNumericString
+                    .charAt(index));
+        }
+
+        return sb.toString();
+    }
 
     public Message() {
         FirebaseMessaging.getInstance().subscribeToTopic(topic);
-
     }
 
     public RequestQueue getmRequestQueue() {
@@ -63,12 +93,16 @@ public class Message {
 //        }
 
 
-
+        /**
+         * builds the message to be sent as a push notification
+         */
         JSONObject mainObject = new JSONObject();
         try{
             mainObject.put("to","/topics/"+topic);
             JSONObject notificationObj = new JSONObject();
+            // puts the title in the push notification
             notificationObj.put("title",title);
+            // puts the body in the push notification
             notificationObj.put("body",body);
 
             JSONObject extraData = new JSONObject();

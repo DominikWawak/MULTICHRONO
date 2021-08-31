@@ -23,15 +23,18 @@ import com.google.firebase.messaging.FirebaseMessagingService;
 import java.time.Duration;
 import java.util.Calendar;
 
+import hallianinc.opensource.timecounter.StopWatch;
+
 public class RecieveNotificationActivity extends AppCompatActivity {
 
-    private Chronometer chronometer;
+    private StopWatch stopWatch;
+    //private Chronometer chronometer;
     private long pauseOffset;
     private boolean running;
 
     private Message message ;
 
-
+    private TextView timerText;
     private TextView lapView;
 
     private long lastLap = 0;
@@ -51,32 +54,26 @@ public class RecieveNotificationActivity extends AppCompatActivity {
         LocalBroadcastManager lbm = LocalBroadcastManager.getInstance(this);
         lbm.registerReceiver(receiver, new IntentFilter("filter_string"));
 
-        chronometer = findViewById(R.id.chrono);
+        timerText = findViewById(R.id.timerText);
         lapView = findViewById(R.id.lapView);
 
 
         TextView finTimerMessage = findViewById(R.id.finTimeMessTxt);
         TextView startTimerMessage = findViewById(R.id.startTimeMessText);
         Button resumeBtn = findViewById(R.id.resumeBtn);
-
         Button lapBtn = findViewById(R.id.lapBtn);
 
+        // displays the final time
         if(getIntent().hasExtra("finishTime")){
             String finishTimer =  getIntent().getStringExtra("finishTime");
             startTimerMessage.setText(finishTimer);
-
-
         }
-
-
-
-
-
+        // displays the start timer
         if(getIntent().hasExtra("startTime")){
             String startTimer =  getIntent().getStringExtra("startTime");
-           startTimerMessage.setText(startTimer);
-           startChronometer();
-
+            startTimerMessage.setText(startTimer);
+            stopWatch = new StopWatch(timerText);
+            startChronometer();
         }
 
         resumeBtn.setOnClickListener(new View.OnClickListener() {
@@ -91,55 +88,86 @@ public class RecieveNotificationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 message.sendNotification("lap","lap");
-
             }
+        });
 
+        resumeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                message.sendNotification("res","res");
+            }
         });
     }
 
+
+    /**
+     * Code for pressing the lap button
+     */
     public BroadcastReceiver receiver = new BroadcastReceiver() {
         @RequiresApi(api = Build.VERSION_CODES.O)
         @Override
         public void onReceive(Context context, Intent intent) {
             if (intent != null) {
-                String str = intent.getStringExtra("key");
-
-                long timeStopped =  SystemClock.elapsedRealtime()- chronometer.getBase() ;
-
-                long t =timeStopped - lastLap;
 
 
-                lapView.setText(lapView.getText() + "\n"+"LAP  │ " + chronometer.getText() + "| " + t / 1000  + " s");
-                lastLap = timeStopped ;
+                    if(intent.getStringExtra("key").equals("key")) {
+
+                        long timeStopped = stopWatch.getTime();
+                        //SystemClock.elapsedRealtime() - chronometer.get.getBase();
+
+                        long t = timeStopped - lastLap;
+
+
+                        lapView.setText(lapView.getText() + "\n" + "LAP  │ " + stopWatch.getTime() + "| " + t / 1000 + " s");
+                        lastLap = timeStopped;
+
+                    }
 
             }
         }
     };
 
 
-
+    /**
+     * starts the chronometer
+     * should implement a wait for user to start
+     */
     public void startChronometer(){
         if(!running){
-            chronometer.setBase(SystemClock.elapsedRealtime()- pauseOffset);
-            chronometer.start();
+            //stopWatch.start().setBase(SystemClock.elapsedRealtime()- pauseOffset);
+            stopWatch.start();
             running = true;
         }
-
     }
-    public void stopChronometer(){
 
+    /**
+     * pauses the chronometer
+     * prob should rename to pauseChronometer and have another stopChronometer that completely stops it
+     */
+    public void stopChronometer(){
         if(running){
-            chronometer.stop();
-            pauseOffset = SystemClock.elapsedRealtime() - chronometer.getBase();
+            int timeToSave = stopWatch.getTime();
+            stopWatch.pause();
+            //pauseOffset = SystemClock.elapsedRealtime() - chronometer.getBase();
             running = false;
         }
 
     }
+
+
+    /**
+     * resets the chronometer back to the start - discards the current timer
+     */
     public void resetChronometer(){
+        stopWatch.stop();
+        //setPauseOffset(0);
+    }
 
-        chronometer.setBase(SystemClock.elapsedRealtime());
-        pauseOffset = 0;
+    private long getPauseOffset() {
+        return pauseOffset;
+    }
 
-
+    public void setPauseOffset(long pauseOffset) {
+        this.pauseOffset = pauseOffset;
     }
 }
