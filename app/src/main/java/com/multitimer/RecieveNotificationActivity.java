@@ -110,7 +110,7 @@ public class RecieveNotificationActivity extends AppCompatActivity {
             if (intent != null) {
 
 
-                    if(intent.getStringExtra("key").equals("key")) {
+                    if(intent.getStringExtra("key").toString().equals("My Data")) {
 
                         long timeStopped = stopWatch.getTime();
                         //SystemClock.elapsedRealtime() - chronometer.get.getBase();

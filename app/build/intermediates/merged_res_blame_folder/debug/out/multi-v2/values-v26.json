@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\allen\\Documents\\GitHub\\MULTICHRONO\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v26\\values-v26.xml",
+            "outputFile": "/Users/dominikwawak/Desktop/untitled folder/AndroidStudioProjects/MultiTimer/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\allen\\.gradle\\caches\\transforms-2\\files-2.1\\48b4b0187e14710b58f428dfadc2260b\\appcompat-1.3.0\\res\\values-v26\\values-v26.xml",
+                    "source": "/Users/dominikwawak/.gradle/caches/transforms-2/files-2.1/48b4b0187e14710b58f428dfadc2260b/appcompat-1.3.0/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",
