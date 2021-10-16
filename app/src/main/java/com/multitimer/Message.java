@@ -132,7 +132,7 @@ public class Message {
                     Map<String,String> header = new HashMap<>();
                     header.put("content-type","application/json");
                     //header.put("authorization","key=******************************PASTEKEYHERE****************************************");
-                    header.put("authorization","key=AAAAEEquS0c:APA91bEmQ1QBuLvvpXFAyvzZiEQMaes87eJ0mQj2p0t5QlQfoKfr6L5rU_YeJ4W9Diw9Qltm8d3BdgSu_i4HO-5IPFE3migOAW4H6gFZIjp5oZbIKyL-ToqFUDi8-ENLfJ0k3P4ZbY5Q ");
+                    header.put("authorization","key= "+BuildConfig.F_KEY.toString());
                     return header;
 
                 }
